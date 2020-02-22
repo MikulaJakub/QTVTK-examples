@@ -76,7 +76,7 @@
   <customwidget>
    <class>QVTKOpenGLWidget</class>
    <extends>QWidget</extends>
-   <header localtion="global">QVTKWidget.h</header>
+   <header location="global">QVTKWidget.h</header>
   </customwidget>
  </customwidgets>
  <resources/>
