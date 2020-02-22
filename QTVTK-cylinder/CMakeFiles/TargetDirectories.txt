@@ -1,0 +1,4 @@
+/home/jakub/Work/testing/QTVTK-change-color/CMakeFiles/rebuild_cache.dir
+/home/jakub/Work/testing/QTVTK-change-color/CMakeFiles/test.out.dir
+/home/jakub/Work/testing/QTVTK-change-color/CMakeFiles/edit_cache.dir
+/home/jakub/Work/testing/QTVTK-change-color/CMakeFiles/test.out_autogen.dir
