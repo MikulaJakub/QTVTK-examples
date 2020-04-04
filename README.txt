@@ -2,7 +2,7 @@
 Qt + VTK examples
 
 
-I wrote these minimalistic examples to learn about Qt and VTK and how to make these two work together. Many of these examples are my own 'experiments', and therefore they may not be written in the most efficient way, rather they demonstrate how things can be done.
+I wrote these minimalistic examples to learn more about Qt and VTK myself. Many of these examples are my own 'experiments', and therefore they may not be written in the most efficient way, rather they demonstrate how things can be done.
 
 
 The examples currently include:
