@@ -1,4 +1,0 @@
-/home/jakub/Work/testing/QTVTK/QTVTK-cylinder-OpenGL/CMakeFiles/rebuild_cache.dir
-/home/jakub/Work/testing/QTVTK/QTVTK-cylinder-OpenGL/CMakeFiles/test.out.dir
-/home/jakub/Work/testing/QTVTK/QTVTK-cylinder-OpenGL/CMakeFiles/edit_cache.dir
-/home/jakub/Work/testing/QTVTK/QTVTK-cylinder-OpenGL/CMakeFiles/test.out_autogen.dir
