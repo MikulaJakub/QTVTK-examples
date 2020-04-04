@@ -14,7 +14,7 @@
 #include "vtkUnstructuredGrid.h"
 #include "vtkDataSetMapper.h"
 #include "vtkHexahedron.h"
-#include "myHex.h"
+//#include "myHex.h"
 
 VTK_MODULE_INIT(vtkRenderingOpenGL2)
 // otherwise I received error: no override found for ... 
@@ -53,37 +53,12 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_released()
 {
-    //print message in terminal
-    qDebug() << "Plotting cylinder";
 
-	//plotCylinder();
+	// PLOT A HEXAHEDRON WHEN CLICKED ON THE BUTTON
 	plotGrid();
-	qDebug() << "Cylinder is rendered. Please click on the window.";
+	qDebug() << "Hexahedron is rendered. Please click on the window to show it.";
 }
 
-
-void MainWindow::plotCylinder()
-{
-	vtkSmartPointer<vtkCylinderSource> cylinder = vtkSmartPointer<vtkCylinderSource>::New();
-	cylinder->SetResolution(8);
-
-	vtkSmartPointer<vtkPolyDataMapper> cylinderMapper = vtkSmartPointer<vtkPolyDataMapper>::New();
-	cylinderMapper->SetInputConnection(cylinder->GetOutputPort());
-
-	vtkSmartPointer<vtkActor> cylinderActor = vtkSmartPointer<vtkActor>::New();
-	cylinderActor->SetMapper(cylinderMapper);
-	cylinderActor->GetProperty()->SetColor(1.0000, 0.3883, 0.2784);
-	cylinderActor->RotateX(30.0);
-	cylinderActor->RotateY(-45.0);
-
-	rendererWindow->AddActor(cylinderActor);
-	rendererWindow->ResetCamera();
-	rendererWindow->GetActiveCamera()->Zoom(1.5);
-
-	
-
-return;
-}
 
 void MainWindow::plotGrid()
 {
@@ -102,29 +77,14 @@ void MainWindow::plotGrid()
 	points->InsertNextPoint(1.0,0.0,0.2);
 	points->InsertNextPoint(1.0,1.0,0.2);
 	points->InsertNextPoint(0.0,1.0,0.2);
-
-	points->InsertNextPoint(2.0+0.0,0.0,0.0);
-	points->InsertNextPoint(2.0+1.0,0.0,0.0);
-	points->InsertNextPoint(2.0+1.0,1.0,0.0);
-	points->InsertNextPoint(2.0+0.0,1.0,0.0);
-	points->InsertNextPoint(2.0+0.0,0.0,1.0);
-	points->InsertNextPoint(2.0+1.0,0.0,1.0);
-	points->InsertNextPoint(2.0+1.0,1.0,1.0);
-	points->InsertNextPoint(2.0+0.0,1.0,1.0);
-
-
 	
   	// Create a hexahedron from the points
-  	//vtkSmartPointer<vtkHexahedron> hex = vtkSmartPointer<vtkHexahedron>::New();
-	vtkSmartPointer<myHex> hex = vtkSmartPointer<myHex>::New();
+  	vtkSmartPointer<vtkHexahedron> hex = vtkSmartPointer<vtkHexahedron>::New();
 	int numberOfVertices = 8;
   	for (int i = 0; i < numberOfVertices; ++i)
     	{
     		hex->GetPointIds()->SetId(i, i);
     	}	
-
-	hex->Initialize(8, points);	// initialize with points
-
 
 	grid->SetPoints(points);
 	grid->InsertNextCell(hex->GetCellType(),hex->GetPointIds());
@@ -135,6 +95,7 @@ void MainWindow::plotGrid()
 	vtkSmartPointer<vtkActor> gridActor = vtkSmartPointer<vtkActor>::New();
 	gridActor->SetMapper(gridMapper);
 
+//	representation from solid to wireframe can be changed using the keys S and W
 //	gridActor->GetProperty()->SetRepresentationToWireframe();
 	gridActor->GetProperty()->EdgeVisibilityOn();
 
@@ -142,16 +103,6 @@ void MainWindow::plotGrid()
 	rendererWindow->ResetCamera();
 	rendererWindow->GetActiveCamera()->Zoom(1.5);
 
-	hex->setMeno(44);
-	qDebug() << hex->getMeno();	
-	qDebug() << hex->GetNumberOfPoints();
-	qDebug() << hex->GetPocetUzlov();
-	
-	hex->GetSuradnice();
-
-	double x[3];
-//	hex->GetCentroid(x);
-	qDebug() << "length = " << hex->GetLength2();
 
 return;
 }
