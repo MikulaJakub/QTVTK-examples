@@ -14,7 +14,7 @@ For some reason (different versions of QT?) I need to run on my laptop:
 
 
 # Result
-![Hexahedron](figures/screenshot.png)
-
+![Hexahedron - solid (press S)](figures/screenshot.png)*Hexahedron - solid (press S)*
+![Hexahedron - wireframe (press W)](figures/screenshot_2.png)*Hexahedron - wireframe (press W)*
 
 

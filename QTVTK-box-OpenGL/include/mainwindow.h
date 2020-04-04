@@ -14,7 +14,6 @@
 #include <vtkPolyDataMapper.h>	//VTK
 #include <vtkAutoInit.h>	//VTK
 #include <vtkVersion.h> 	//VTK
-#include "myHex.h"
 
 namespace Ui {
 class MainWindow;
@@ -30,7 +29,6 @@ public:
 
 private slots:
     void on_pushButton_released();
-	void plotCylinder();
 	void plotGrid();
 
 private:
