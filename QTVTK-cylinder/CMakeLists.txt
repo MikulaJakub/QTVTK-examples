@@ -2,9 +2,10 @@ cmake_minimum_required(VERSION 3.0)
 
 set(CMAKE_CXX_STANDARD 11)
 
-
+# FIND VTK
 find_package(VTK REQUIRED)
 
+# FIND QT
 find_package(Qt5Core REQUIRED)
 find_package(Qt5Gui REQUIRED)
 find_package(Qt5Widgets REQUIRED)
@@ -21,17 +22,11 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTORCC ON)
 
-set(HEADERS
-	mainwindow.h
-)
+# BIN DIRECTORY
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/bin)
+set(HEADER_DIR ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
-set(SOURCES
-	mainwindow.cpp
-)
-
-add_executable(test.out main.cpp ${SOURCES} ${HEADERS})
-
-target_link_libraries(test.out
-	${QT_LIBRARIES}
-	${VTK_LIBRARIES}
-)
+# INCLUDE
+include_directories(${HEADER_DIR})
+include_directories(".")
+subdirs(src)
