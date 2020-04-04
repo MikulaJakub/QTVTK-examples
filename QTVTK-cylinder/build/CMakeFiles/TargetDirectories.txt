@@ -1,6 +1,0 @@
-/home/jakub/Work/testing/QTVTK/QTVTK-cylinder/build/CMakeFiles/rebuild_cache.dir
-/home/jakub/Work/testing/QTVTK/QTVTK-cylinder/build/CMakeFiles/edit_cache.dir
-/home/jakub/Work/testing/QTVTK/QTVTK-cylinder/build/src/CMakeFiles/rebuild_cache.dir
-/home/jakub/Work/testing/QTVTK/QTVTK-cylinder/build/src/CMakeFiles/test.out.dir
-/home/jakub/Work/testing/QTVTK/QTVTK-cylinder/build/src/CMakeFiles/edit_cache.dir
-/home/jakub/Work/testing/QTVTK/QTVTK-cylinder/build/src/CMakeFiles/test.out_autogen.dir
