@@ -1,4 +1,0 @@
-/home/jakub/Work/testing/QTVTK/CMakeFiles/rebuild_cache.dir
-/home/jakub/Work/testing/QTVTK/CMakeFiles/test.out.dir
-/home/jakub/Work/testing/QTVTK/CMakeFiles/edit_cache.dir
-/home/jakub/Work/testing/QTVTK/CMakeFiles/test.out_autogen.dir
