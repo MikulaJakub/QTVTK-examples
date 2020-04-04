@@ -1,7 +1,7 @@
 This is a minimalistic example of QT + VTK rendering a cylinder upon clicking a button.
 
-# Compilations
-- create a folder build
+# Compilation
+- create a folder build "mkdir build"
 - go into build
 - type "cmake .."
 - type "make"
