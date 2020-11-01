@@ -15,6 +15,7 @@ May need to explicitly link the libs:
 
 # Result
 ![Hexahedron - solid (press S)](figures/screenshot.png)*Hexahedron - solid (press S)*
+
 ![Hexahedron - wireframe (press W)](figures/screenshot_2.png)*Hexahedron - wireframe (press W)*
 
 
