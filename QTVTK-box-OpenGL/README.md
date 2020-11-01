@@ -9,7 +9,7 @@ This is a minimalistic example of QT + VTK rendering a cylinder upon clicking a 
 
 # Running the code
 
-For some reason (different versions of QT?) I need to run on my laptop:
+May need to explicitly link the libs:
 ```LD_LIBRARY_PATH="/opt/Qt5.9.0/5.9/gcc_64/lib" ./test.out```
 
 
