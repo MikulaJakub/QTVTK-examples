@@ -1,3 +1,3 @@
 # Plot vector field on unstructured grid
 
-![screenshot](screenshot)*screenshot*
+![screenshot](screenshot.png)*screenshot*
