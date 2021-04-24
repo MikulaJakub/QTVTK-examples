@@ -1,7 +1,7 @@
 # Qt + VTK examples
 
 
-I wrote these minimalistic examples to learn more about Qt and VTK myself and decided to share these examples with others. Many of these examples are my own 'experiments', and therefore they may not be written in the most efficient way, rather they demonstrate how things can be done.
+I wrote these minimalistic examples to learn more about Qt and VTK myself. QT is a powerful tool for creating GUI applications, while VTK is a great opean source visualization library written in C++. Many of the examples presented here are my own `experiments`, and therefore may not be written in the most efficient or optimized way, rather they demonstrate how things can be done.
 
 
 The examples currently include:
