@@ -9,12 +9,13 @@ This is a minimalistic example of QT + VTK rendering a cylinder upon clicking a 
 
 # Running the code
 
-For some reason (different versions of QT?) I need to run on my laptop:
+May need to explicitly specify the path to the QT libs:
+
 ```LD_LIBRARY_PATH="/opt/Qt5.9.0/5.9/gcc_64/lib" ./test.out```
 
 
 # Result
-![Cylinder - solid (press S)](figures/screenshot.png)*Cylinder - solid (press S)*
+![Cylinder - solid (press S)](figures/screenshot.png)
 
 You can notice that the rendering of the walls is not corret. I fixed this in QTVTK-cylinder-OpenGL.
 
