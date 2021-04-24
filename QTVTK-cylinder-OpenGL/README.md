@@ -15,5 +15,5 @@ May need to explicitly specify the path to the QT libs:
 
 
 # Result
-![Cylinder - solid (press S)](figures/screenshot.png)*Cylinder - solid (press S)*
+![Cylinder - solid (press S)](figures/screenshot.png)
 
