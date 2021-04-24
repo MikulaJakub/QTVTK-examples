@@ -1,9 +1,7 @@
-(c)2020 Jakub Mikula
-
-Qt + VTK examples
+# Qt + VTK examples
 
 
-I wrote these minimalistic examples to learn more about Qt and VTK myself and share that knowledge with others . Many of these examples are my own 'experiments', and therefore they may not be written in the most efficient way, rather they demonstrate how things can be done.
+I wrote these minimalistic examples to learn more about Qt and VTK myself and decided to share these examples with others. Many of these examples are my own 'experiments', and therefore they may not be written in the most efficient way, rather they demonstrate how things can be done.
 
 
 The examples currently include:
