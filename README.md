@@ -9,5 +9,5 @@ The examples currently include:
 QTVTK-box-OpenGL |  QTVTK-cylinder | VTK-vector-field-on-unstructured-grid
 :-------------------------:|:-------------------------:|:-------------------------:
 ![](QTVTK-box-OpenGL/figures/screenshot.png) | ![](QTVTK-cylinder-OpenGL/figures/screenshot.png) | ![](VTK-vector-field-on-unstructured-grid/screenshot.png)
-Plot a single VTK cell when released a button. | Plot cylinder when released a button. Additional member functions, such as change of the color can are shown also. | Plot vector field on an unstructured grid using arrows. 
+Minimalistic example to plot a single VTK cell when released a button. | Minimalistic example to plot a cylinder when released a button. Additional member functions, such as change of the color can are shown also. | Plot vector field on an unstructured grid using arrows. 
 
